@@ -24,12 +24,9 @@ document.querySelector("#push").onclick = function () {
   let radio;
   let editText = document.getElementById("inputText");
   let today = new Date();
-  let hours = today.getHours();
-  let minutes = today.getMinutes();
-  let day = today.getDate();
-  let month = today.getMonth();
-  let year = today.getFullYear();
-  let date = `${hours}:${minutes} ${day}.${month}.${year}`;
+  let hours = today.toLocaleTimeString().slice(0,-3);
+  let year = today.toLocaleDateString();
+  let date = `${hours} ${year}`;
   for (let i = 0; i < rad.length; i++) {
     if (rad[i].checked) {
       radio = rad[i];
@@ -66,6 +63,7 @@ document.querySelector("#push").onclick = function () {
   for (let i = 0; i < current_task.length; i++) {
     current_task[i].onclick = function () {
       $("#exampleModal").modal("show");
+      document.getElementById("inputText").value = this.closest(".todoText").value;
       $("#exampleModal").modal("hide");
     };
   }
