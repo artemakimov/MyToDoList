@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/aa7a31f950.js" crossorigin="anonymous"></script>
     <title>LogicPart</title>
 </head>
-<body>
+<body class="page">
     <div class="container-fluid wrapper" id="elem">
         <nav class="navbar navbar-light">
             <h1>MyToDoList</h1>
@@ -27,7 +27,7 @@
                     </button>
                     <div class="dropdown-menu p-2 dropdown-menu-right" aria-labelledby="dropdownMenuSettings">
                         <p>Background colors:</p>
-                        <button type="submit" onclick="javascript:changeColor()" class="button__color color1"></button> 
+                        <button type="submit" onclick="changeColor()" class="button__color color1"></button> 
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                         <div class="form-group row">
                             <div class="col-sm-12 text-center">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Add task</button>
+                                <button type="button" id="push" class="btn btn-primary auth-button">Add task</button>
                             </div>
                         </div>
                     </form>

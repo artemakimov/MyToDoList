@@ -8,7 +8,6 @@
 
 .navbar{
     background: #f8f9fa;
-    background-color: inherit;
 }
 
 .dropdown-menu.show{
@@ -33,4 +32,13 @@
     transition: all 0.5s;
     color: rgb(20, 20, 20);
     box-shadow: 1px 1px 1px 4px #007BFF;
+}
+
+.checked{
+    background-color: rgb(164, 164, 164) !important; 
+}
+
+.disabledButton{
+    cursor: not-allowed !important;
+    background-color: rgb(89, 89, 89);
 }
