@@ -3,7 +3,7 @@ let completedTasks = document.getElementById("completedTasks");
 let documentForm = document.querySelector("form");
 let inputTitle = document.getElementById("inputTitle");
 let inputText = document.getElementById("inputText");
-const radioValue = document.querySelectorAll('input[type="radio"]')
+let radioValue = document.querySelectorAll('input[type="radio"]')
 let gridRadios = document.getElementsByName("gridRadios");
 let submitButton = document.getElementById("push");
 let minToMaxButton = document.getElementById("minToMaxButton");
@@ -244,7 +244,7 @@ function editioningTask(ev){
     let date = today.toLocaleTimeString().slice(0, -3) +" "+ today.toLocaleDateString();
 
 
-    const bigTime = today.getTime();
+    let bigTime = today.getTime();
     task.bigTime = bigTime;
 
     let dateElement = task.querySelector(".time");
