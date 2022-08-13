@@ -14,10 +14,14 @@
     display: block;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap:10px;
 }
+
+
 .button__color{
-    background-color: #007bff;
+
     height: 30px;
     width: 50px;
     text-align: center;
@@ -27,9 +31,35 @@
     text-decoration: none;
 }
 
+.firstColor{
+    background-color: #0b57a3;
+}
+
+.secondColor{
+    background-color: #5e17b6;
+}
+.thirdColor{
+    background-color: #1fc042;
+}
+
+.fourthСolor{
+    background-color: #d11b64;
+}
+
+.fifthСolor{
+    background-color: #163e18;
+}
+
+.sixthСolor{
+    background-color: #bde22c;
+}
+
+.seventhСolor{
+    background-color: white;
+}
+
 .button__color:hover{
     transition-delay: 0;
     transition: all 0.5s;
-    color: rgb(20, 20, 20);
-    border: 4px solid rgba(63, 58, 58, 0.458);
+    border: 10px solid rgb(0, 0, 0);
 }
